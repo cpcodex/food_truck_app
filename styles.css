@@ -10,7 +10,7 @@ White: #FFFFFF - Used for the clouds, text outlines, and logo elements. */
 
 :root {
   --darkblue: #132952;
-  --mountaingreen: #257e19;
+  --mountaingreen: #185211;
   --skyblue: #5d9cd3;
   --lightgreen: #5fc52d;
   --white: #ffffff;
@@ -18,15 +18,42 @@ White: #FFFFFF - Used for the clouds, text outlines, and logo elements. */
 }
 
 body {
-  background-color: var(--slategray);
-  margin: 2px;
+  background-color: #132952;
+  margin: auto;
 }
 
 header {
-  background-color: var(--mountaingreen);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  color: var(--skyblue);
+  text-shadow: 1px 1px 5px black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 28px;
+}
+
+.nav-menu-container a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: #5d9cd3;
+  text-shadow: 1px 1px 5px black;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+.about {
+  background-image: url(assets/imgs/street-food-still-life.jpg);
+  background-size: 1500px;
+  background-position-y: 60%;
 }
 
 main {
