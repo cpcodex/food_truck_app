@@ -1,0 +1,38 @@
+/* Dark Blue: #1A376C - Used for the main body of the truck and text.
+
+Mountain Green: #2E8B57 - A rich, vibrant green for the mountain peaks.
+
+Sky Blue: #5993C5 - A clear, light blue used for the sky in the background.
+
+Light Green Accent: #76C24F - A brighter, almost lime green used for the mountain outlines and accents.
+
+White: #FFFFFF - Used for the clouds, text outlines, and logo elements. */
+
+:root {
+  --darkblue: #132952;
+  --mountaingreen: #257e19;
+  --skyblue: #5d9cd3;
+  --lightgreen: #5fc52d;
+  --white: #ffffff;
+  --slategray: #5b6774;
+}
+
+body {
+  background-color: var(--slategray);
+  margin: 2px;
+}
+
+header {
+  background-color: var(--mountaingreen);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+main {
+  background-color: var(--skyblue);
+}
+
+footer {
+  background-color: var(--darkblue);
+}
