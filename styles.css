@@ -35,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, var(--skyblue), white);
+  background: linear-gradient(to bottom, var(--skyblue), var(--darkblue));
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ header {
   text-decoration: none;
   padding-right: 10px;
   color: black;
-  text-shadow: 0.5px 0.5px 2px var(--lightgreen);
+  text-shadow: 0.5px 0.5px 2px var(--skyblue);
 }
 
 a:hover {
@@ -63,7 +63,7 @@ a:hover {
 .about {
   background-image: url(assets/imgs/street-food-still-life.jpg);
   background-size: 1500px;
-  background-position-y: 60%;
+  background-position-y: 80%;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -76,8 +76,13 @@ a:hover {
   max-height: 450px;
 }
 
+.about img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+
 .about-title {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   color: #5d9cd3;
@@ -87,7 +92,7 @@ a:hover {
 }
 
 .about-quote {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   color: var(--white);
   text-shadow: 1px 2px 2px black;
   display: flex;
@@ -100,8 +105,8 @@ a:hover {
 .about-body {
   display: block;
   align-items: baseline;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: 22px;
+  background-color: rgba(141, 141, 141, 0.7);
+  font-size: 18px;
   border-radius: 5px;
 }
 
@@ -112,8 +117,6 @@ a:hover {
 }
 
 /* Main Section */
-main {
-}
 
 /* Photo Carousel */
 .photo-container {
@@ -150,5 +153,31 @@ main {
   display: block;
 }
 
-. footer {
+/* Menu */
+.menu-box {
+  background-color: rgb(112, 112, 112, 0.8);
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header h2 {
+  align-self: center;
+  font-size: 36px;
+}
+
+.menu-text {
+  font-size: 12px;
+  font-style: italic;
+  align-self: center;
+}
+
+.menu-item-entree {
+  display: flex;
+}
+
+.menu-item-card {
+  border: 4px red solid;
 }
