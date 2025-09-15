@@ -18,10 +18,11 @@ White: #FFFFFF - Used for the clouds, text outlines, and logo elements. */
 }
 
 body {
-  background-color: #132952;
   margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header / Nav Menu */
 header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -29,11 +30,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, var(--skyblue), white);
+  text-align: center;
 }
 
 .header-container {
   color: var(--skyblue);
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 2px 1px 2px black;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 28px;
@@ -42,24 +45,93 @@ header {
 .nav-menu-container a {
   text-decoration: none;
   padding-right: 10px;
-  color: #5d9cd3;
-  text-shadow: 1px 1px 5px black;
+  color: black;
+  text-shadow: 0.5px 0.5px 2px var(--lightgreen);
 }
 
 a:hover {
-  color: aquamarine;
+  color: var(--lightgreen);
+  text-shadow: 0.5px 0.5px 2px black;
 }
 
+/* About Section */
 .about {
   background-image: url(assets/imgs/street-food-still-life.jpg);
   background-size: 1500px;
   background-position-y: 60%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
+.about-logo {
+  display: flex;
+  align-self: center;
+  max-height: 450px;
+}
+
+.about-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  color: #5d9cd3;
+  text-shadow: 1px 1px 5px black;
+  font-size: 28px;
+}
+
+.about-quote {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+  text-shadow: 1px 2px 2px black;
+  display: flex;
+  justify-content: center;
+}
+
+.about-body {
+  display: block;
+  align-items: baseline;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+}
+
+/* Main Section */
 main {
-  background-color: var(--skyblue);
 }
 
-footer {
-  background-color: var(--darkblue);
+/* Photo Carousel */
+.photo-container {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.photo-carousel {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.photo-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+. footer {
 }
