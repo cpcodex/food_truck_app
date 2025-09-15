@@ -22,6 +22,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body::selection {
+  background-color: var(--mountaingreen);
+  color: white;
+}
+
 /* Header / Nav Menu */
 header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -59,9 +64,10 @@ a:hover {
   background-image: url(assets/imgs/street-food-still-life.jpg);
   background-size: 1500px;
   background-position-y: 60%;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .about-logo {
@@ -77,6 +83,7 @@ a:hover {
   color: #5d9cd3;
   text-shadow: 1px 1px 5px black;
   font-size: 28px;
+  border-radius: 5px;
 }
 
 .about-quote {
@@ -85,6 +92,9 @@ a:hover {
   text-shadow: 1px 2px 2px black;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 10px;
 }
 
 .about-body {
@@ -92,6 +102,13 @@ a:hover {
   align-items: baseline;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 22px;
+  border-radius: 5px;
+}
+
+.about-body p {
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
 }
 
 /* Main Section */
