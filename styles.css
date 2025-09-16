@@ -165,7 +165,8 @@ a:hover {
 
 .menu-header h2 {
   align-self: center;
-  font-size: 36px;
+  font-size: 48px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .menu-text {
@@ -180,4 +181,11 @@ a:hover {
 
 .menu-item-card {
   border: 4px red solid;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.menu-item-sides {
+  display: flex;
+  justify-content: space-around;
 }
