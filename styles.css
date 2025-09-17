@@ -157,7 +157,9 @@ a:hover {
 .menu-box {
   background-color: rgb(112, 112, 112, 0.8);
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
 }
 
 .menu-header {
@@ -188,7 +190,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin: 5px;
-  color: var(--skyblue);
+  color: white;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -204,7 +206,7 @@ a:hover {
 }
 
 .menu-item-card {
-  border: 4px red solid;
+  /* border: 4px red solid; */
   border-radius: 10px;
   margin: 5px;
   padding: 10px;
@@ -212,6 +214,9 @@ a:hover {
 
 .menu-item-card img {
   float: left;
+  border-radius: 10px;
+  margin-right: 25px;
+  box-shadow: 0 4px 8px black;
 }
 
 .menu-item-description {
