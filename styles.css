@@ -17,6 +17,10 @@ White: #FFFFFF - Used for the clouds, text outlines, and logo elements. */
   --slategray: #5b6774;
 }
 
+hr {
+  margin: 20px;
+}
+
 body {
   margin: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -50,8 +54,8 @@ header {
 .nav-menu-container a {
   text-decoration: none;
   padding-right: 10px;
-  color: black;
-  text-shadow: 0.5px 0.5px 2px var(--skyblue);
+  color: var(--skyblue);
+  text-shadow: 1px 1px 4px black;
 }
 
 a:hover {
@@ -62,12 +66,13 @@ a:hover {
 /* About Section */
 .about {
   background-image: url(assets/imgs/street-food-still-life.jpg);
-  background-size: 1500px;
-  background-position-y: 80%;
+  background-size: 2000px;
+  background-position-y: 60%;
   padding: 10px;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  height: 600px;
 }
 
 .about-logo {
@@ -79,6 +84,13 @@ a:hover {
 .about img {
   border-radius: 10px;
   box-shadow: 2px 2px 4px gray;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 20px;
 }
 
 .about-title {
@@ -172,6 +184,8 @@ a:hover {
   font-size: 48px;
   font-family: "Courier New", Courier, monospace;
   margin: 20px;
+  color: var(--skyblue);
+  text-shadow: 1px 1px 4px black;
 }
 
 .menu-text {
@@ -233,4 +247,138 @@ a:hover {
   justify-content: space-around;
   flex-direction: column;
   margin: 5px;
+  padding: 10px;
+}
+
+/* Time and Location */
+.time-box {
+  background: linear-gradient(to bottom, var(--darkblue), var(--skyblue));
+}
+
+.time-box img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+}
+
+.time-box h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 1px 1px 4px black;
+  padding-top: 50px;
+  color: var(--skyblue);
+}
+
+.time-box-card {
+  display: flex;
+  justify-content: center;
+}
+
+.time-box-location {
+  margin: 10px;
+  text-align: center;
+  width: 500px;
+}
+
+.time-box-location-text {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.time-box-set {
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.time-box-times {
+  margin: 5px;
+  padding: 10px;
+}
+
+.time-box-time {
+  font-size: 20px;
+  align-items: center;
+}
+
+.sunday {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(255, 247, 0);
+  text-shadow: 1px 2px 2px black;
+}
+
+/* Review Box */
+.review-box {
+  border: 2px grey solid;
+  background-color: rgb(112, 112, 112, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  margin: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.reviews h2 {
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+  color: var(--skyblue);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.review-box-container {
+  border: 2px black solid;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.review-box-title {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--skyblue);
+  text-shadow: 1px 1px 4px black;
+}
+
+.review-box-body {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to bottom, var(--skyblue), var(--darkblue));
+  height: 100px;
+}
+
+.footer-text {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--skyblue);
+  text-shadow: 1px 1px 4px black;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--lightgreen);
+  text-shadow: 1px 1px 4px black;
 }
